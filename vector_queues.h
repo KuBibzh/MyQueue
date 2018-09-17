@@ -73,56 +73,7 @@ class vector_queues{
 		void clear(){
 			len=0;
 		}
-		bool operator==(vector_queues& stacks) const{
-			if(len!=stacks.len) return 0;
-			for(int i=0;i<len;i++){
-				if(array[i]!=stacks.array[i]) return 0;
-			}
-			if(len!=stacks.len) return 0;
-			return 1;
-		}
-		bool operator!=(vector_queues& stacks) const{
-			if(len!=stacks.len) return 1;
-			for(int i=0;i<len;i++){
-				if(array[i]!=stacks.array[i]) return 1;
-			}
-			if(len==stacks.len) return 0;
-			return 1;
-		}
-		bool operator<=(vector_queues& stacks) const{
-			for(int i=0;i<len;i++){
-				if(array[i]<stacks.array[i]) return 1;
-				else if(array[i]>stacks.array[i]) return 0;
-			}
-			if(len<=stacks.len) return 1;
-			return 0;
-		}
-		bool operator>=(vector_queues& stacks) const{
-			for(int i=0;i<len;i++){
-				if(array[i]>stacks.array[i]) return 1;
-				else if(array[i]>stacks.array[i]) return 0;
-			}
-			if(len>=stacks.len) return 1;
-			return 0;
-		}
-		bool operator<(vector_queues& stacks) const{
-			for(int i=0;i<len;i++){
-				if(array[i]<stacks.array[i]) return 1;
-				else if(array[i]>stacks.array[i]) return 0;
-			}
-			if(len<stacks.len) return 1;
-			return 0;
-		}
-		bool operator>(vector_queues& stacks) const{
-			for(int i=0;i<len;i++){
-				if(array[i]>stacks.array[i]) return 1;
-				else if(array[i]<stacks.array[i]) return 0;
-			}
-			if(len>stacks.len) return 1;
-			return 0;
-		}
-
-
+		
 };
 
 
